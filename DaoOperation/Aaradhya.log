@@ -12,3 +12,8 @@
 2023-04-19 14:31:12.745  INFO 1800 --- [main] bank.project.dao.RoleService             : username
 2023-04-19 14:31:12.775  INFO 1800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-04-19 14:31:12.790  INFO 1800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-19 15:29:13.885  INFO 18968 --- [restartedMain] bank.project.dao.DaoApplication          : Starting DaoApplication using Java 1.8.0_292 on WPG02V1LW with PID 18968 (C:\Bank Usecase Project\DaoOperation\target\classes started by xxnlnnoa in C:\Bank Usecase Project\DaoOperation)
+2023-04-19 15:29:13.885  INFO 18968 --- [restartedMain] bank.project.dao.DaoApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 15:29:13.928  INFO 18968 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nlnamr\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/nlnamr/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-04-19 15:29:13.928  INFO 18968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19 15:29:13.928  INFO 18968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'

@@ -6,6 +6,9 @@ import java.util.Optional;
 public interface BankOperations {
     List<Role> listAllRole();
      List<Role> readByUserNames(String name);
+      void decrementAttempts(int id);
+      void setAttempts(int id);
+      void updateStatus();
     public Optional<Role> userlogin(String uname);
     Role getByUsername(String username);
     void incrementFailedAttempts(int id);

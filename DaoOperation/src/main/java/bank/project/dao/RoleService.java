@@ -45,6 +45,26 @@ import java.util.ResourceBundle;
         return role;
     }
 
+    @Override
+//if two times wrong and third time correct
+    public void decrementAttempts(int id) {
+        jdbcTemplate.update("update ROLE set ATTEMPTS = ATTEMPTS - 1 where ROLE_ID=?",id);
+        logger.info("Decreased the number of attempts");
+        updateStatus();
+
+    }
+
+    @Override
+    public void setAttempts(int id) {
+        jdbcTemplate.update("update ROLE set ATTEMPTS=3 where ROLE_ID=?",id);
+        logger.info("Set attempts to 3");
+    }
+
+    @Override
+    public void updateStatus() {
+        jdbcTemplate.update("update ROLE set ROLE_STATUS='Inactive' where ATTEMPTS=0");
+        logger.info("Status set to inactive");
+    }
     class ProfileUpdateMapper implements RowMapper<ProfileUpdate> {
   @Override
         public ProfileUpdate mapRow(ResultSet rs, int rowNum) throws SQLException {
