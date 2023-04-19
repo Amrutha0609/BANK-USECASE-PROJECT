@@ -1,0 +1,46 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://soap.project.approval"
+            xmlns:tns="http://soap.project.approval"
+            elementFormDefault="qualified">
+
+    <!-- POJO -->
+    <xsd:complexType name="customer">
+        <xsd:sequence>
+                <xsd:element name="customerid" type="xsd:int" />
+                <xsd:element name="customername" type="xsd:string"/>
+                <xsd:element name="customeraddress" type="xsd:string" />
+                <xsd:element name="customerstatus" type="xsd:string" />
+                <xsd:element name="contact" type="xsd:long" />
+                <xsd:element name="username" type="xsd:string"/>
+                <xsd:element name="password" type="xsd:string" />
+                <xsd:element name="attempts" type="xsd:int" />
+                <xsd:element name="customeraadhaar" type="xsd:long"/>
+                <xsd:element name="customerpan" type="xsd:string" />
+                <xsd:element name="updatestatus" type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>
+<!--    ServiceStatus-->
+    <xsd:complexType name="serviceStatus">
+        <xsd:sequence>
+            <xsd:element name="status" type="xsd:string" />
+            <xsd:element name="message" type="xsd:string" />
+        </xsd:sequence>
+   </xsd:complexType>
+
+        <!-- List Soap API -->
+        <xsd:element name="approveRequest">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="username" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="approveResponse">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="message" type="tns:serviceStatus"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:element>
+
+</xsd:schema>

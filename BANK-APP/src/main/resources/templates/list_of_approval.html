@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Of Approval</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+<style>
+    button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    body {
+        background-color: lavender;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        fetchDetails();
+    })
+
+
+
+    function approve(user) {
+        var soapRequest = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soap.project.approval\">\n" +
+            "   <soapenv:Header/>\n" +
+            "   <soapenv:Body>\n" +
+            "      <soap:approveRequest>\n" +
+            "         <soap:username>" + user + "</soap:username>\n" +
+            "      </soap:approveRequest>\n" +
+            "   </soapenv:Body>\n" +
+            "</soapenv:Envelope>";
+        $.ajax({
+            url: "http://localhost:8086/approvalPoint",
+            type: "POST",
+            dataType: "xml",
+            contentType: "text/xml;charset=\"UTF-8\"",
+            data: soapRequest,
+            success: (data) => {
+                fetchDetails();
+            },
+            error:()=>{
+                alert("error")
+            }
+        });
+     }
+    function fetchDetails(){
+        $.get("http://localhost:8086/rest/gets",function(data) {
+            console.log(data.length)
+            $("tbody").html("");
+            $.each(data,function (profileindex,item) {
+                console.log(item)
+                alert("lists of the customer");
+               // String info="the customers_profile is updates";
+                $("#approvaltable").append("<tr class='rows'><td>"+item.customername+"</td><td>"+item.customercontact+"</td><td>"+item.customeraadhaar+"</td><td>"+item.customerpan+"</td><td>"+item.updatestatus +"</td><td><button type='button' class='btn btn-success' onclick=\"approve('"+item.username+"')\">Approve</button> </td></tr>");
+                //alert("lists of the customer");
+             //   return info;
+            })
+        });
+    }
+</script>
+<img src="aaradhya logo.jpg" width="5px" height="5px">
+<div class="container">
+    <div class="row justify-content-center text-dark bg-info rounded-4 mt-3 col-lg-12 col-md-8 col-sm-12">
+        <h1 class="text-center">List Of Approvals</h1>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-lg-12 col-md-8 col-sm-12 card bg-info rounded-4 p-2 mt-2">
+            <p>A bank is a financial institution which creates credit by lending money to a borrower thus creating a corresponding deposit on the bank’s balance sheet. <br>This blog talks about the key benefits of a bank account.</p>
+        </div>
+    </div>
+    <div class="table-responsive mt-4 rounded-4">
+        <table class="table text-dark table-striped p-2 shadow-lg text-nowrap" cellspacing="1px" cellpadding="1px">
+            <tr class="bg-info">
+                <th>customer_name</th>
+                <th>customer_contact</th>
+                <th>customer_aadhaar</th>
+                <th>customer_pan</th>
+                <th>update_status</th>
+            </tr>
+            <tbody id="approvaltable">
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <button type="Exit" name="exit">exit</button>
+</div>
+</body>
+</html>

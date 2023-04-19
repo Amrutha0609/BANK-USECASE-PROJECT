@@ -1,0 +1,669 @@
+2023-04-19 11:36:12.916  INFO 15944 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 15944 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 11:36:12.918  INFO 15944 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 11:36:13.762  INFO 15944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 11:36:13.778  INFO 15944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2023-04-19 11:36:13.950  INFO 15944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$d5cb6c2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 11:36:13.966  INFO 15944 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$569834cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 11:36:14.029  INFO 15944 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 11:36:14.287  INFO 15944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 11:36:14.297  INFO 15944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 11:36:14.297  INFO 15944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 11:36:14.392  INFO 15944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 11:36:14.392  INFO 15944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1398 ms
+2023-04-19 11:36:15.052  INFO 15944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 11:36:15.068  WARN 15944 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 11:36:15.256  INFO 15944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 11:36:15.416  INFO 15944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 11:36:15.429  INFO 15944 --- [main] bank.project.app.AppApplication          : Started AppApplication in 3.045 seconds (JVM running for 3.974)
+2023-04-19 11:42:45.250  INFO 23064 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 23064 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 11:42:45.252  INFO 23064 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 11:42:45.931  INFO 23064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 11:42:45.933  INFO 23064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2023-04-19 11:42:46.117  INFO 23064 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$4c94d070] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 11:42:46.119  INFO 23064 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cd619911] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 11:42:46.150  INFO 23064 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 11:42:46.339  INFO 23064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 11:42:46.355  INFO 23064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 11:42:46.355  INFO 23064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 11:42:46.450  INFO 23064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 11:42:46.450  INFO 23064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1148 ms
+2023-04-19 11:42:47.015  INFO 23064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 11:42:47.018  WARN 23064 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 11:42:47.268  INFO 23064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 11:42:47.378  INFO 23064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 11:42:47.394  INFO 23064 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.582 seconds (JVM running for 3.369)
+2023-04-19 11:43:51.631  INFO 22044 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 22044 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 11:43:51.631  INFO 22044 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 11:43:52.265  INFO 22044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 11:43:52.276  INFO 22044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 11:43:52.418  INFO 22044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$a27f9d92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 11:43:52.418  INFO 22044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$234c6633] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 11:43:52.449  INFO 22044 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 11:43:52.669  INFO 22044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 11:43:52.685  INFO 22044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 11:43:52.685  INFO 22044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 11:43:52.795  INFO 22044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 11:43:52.795  INFO 22044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2023-04-19 11:43:53.298  INFO 22044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 11:43:53.298  WARN 22044 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 11:43:53.487  INFO 22044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 11:43:53.613  INFO 22044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 11:43:53.613  INFO 22044 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.451 seconds (JVM running for 3.264)
+2023-04-19 11:44:35.401  INFO 22044 --- [http-nio-8086-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 11:44:35.401  INFO 22044 --- [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 11:44:35.409  INFO 22044 --- [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-04-19 12:04:25.177  INFO 11748 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 11748 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:04:25.177  INFO 11748 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:04:25.712  INFO 11748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:04:25.712  INFO 11748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:04:25.869  INFO 11748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:04:25.869  INFO 11748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:04:25.916  INFO 11748 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:04:26.120  INFO 11748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:04:26.120  INFO 11748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:04:26.120  INFO 11748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:04:26.906  INFO 11748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:04:26.906  INFO 11748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
+2023-04-19 12:04:27.393  INFO 11748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:04:27.393  WARN 11748 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:04:27.597  INFO 11748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:04:27.692  INFO 11748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:04:27.712  INFO 11748 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.905 seconds (JVM running for 3.598)
+2023-04-19 12:05:40.747  INFO 10560 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 10560 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:05:40.747  INFO 10560 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:05:41.299  INFO 10560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:05:41.314  INFO 10560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:05:41.472  INFO 10560 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:05:41.472  INFO 10560 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:05:41.503  INFO 10560 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:05:41.677  INFO 10560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:05:41.677  INFO 10560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:05:41.677  INFO 10560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:05:41.740  INFO 10560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:05:41.740  INFO 10560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2023-04-19 12:05:42.198  INFO 10560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:05:42.198  WARN 10560 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:05:42.340  INFO 10560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:05:42.435  INFO 10560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:05:42.435  INFO 10560 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.031 seconds (JVM running for 2.67)
+2023-04-19 12:05:44.445  INFO 10560 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:05:44.445  INFO 10560 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:05:44.445  INFO 10560 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:07:07.961  INFO 15988 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 15988 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:07:07.961  INFO 15988 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:07:08.434  INFO 15988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:07:08.449  INFO 15988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:07:08.591  INFO 15988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$bac86b57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:07:08.591  INFO 15988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3b9533f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:07:08.622  INFO 15988 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:07:08.780  INFO 15988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:07:08.780  INFO 15988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:07:08.780  INFO 15988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:07:08.843  INFO 15988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:07:08.843  INFO 15988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 850 ms
+2023-04-19 12:07:09.220  INFO 15988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:07:09.220  WARN 15988 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:07:09.345  INFO 15988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:07:09.440  INFO 15988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:07:09.440  INFO 15988 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.811 seconds (JVM running for 2.413)
+2023-04-19 12:07:18.728  INFO 15988 --- [http-nio-8086-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:07:18.728  INFO 15988 --- [http-nio-8086-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:07:18.728  INFO 15988 --- [http-nio-8086-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:07:42.707  INFO 22928 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 22928 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:07:42.707  INFO 22928 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:07:43.196  INFO 22928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:07:43.196  INFO 22928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:07:43.321  INFO 22928 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:07:43.335  INFO 22928 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:07:43.353  INFO 22928 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:07:43.526  INFO 22928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:07:43.526  INFO 22928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:07:43.526  INFO 22928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:07:43.589  INFO 22928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:07:43.589  INFO 22928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 835 ms
+2023-04-19 12:07:43.967  INFO 22928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:07:43.967  WARN 22928 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:07:44.093  INFO 22928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:07:44.172  INFO 22928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:07:44.187  INFO 22928 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.81 seconds (JVM running for 2.446)
+2023-04-19 12:07:51.392  INFO 22928 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:07:51.392  INFO 22928 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:07:51.392  INFO 22928 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:10:31.250  INFO 4444 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 4444 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:10:31.266  INFO 4444 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:10:31.847  INFO 4444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:10:31.850  INFO 4444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:10:31.991  INFO 4444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:10:31.991  INFO 4444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:10:32.006  INFO 4444 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:10:32.179  INFO 4444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:10:32.179  INFO 4444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:10:32.179  INFO 4444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:10:32.242  INFO 4444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:10:32.242  INFO 4444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+2023-04-19 12:10:32.635  INFO 4444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:10:32.635  WARN 4444 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:10:32.762  INFO 4444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:10:32.840  INFO 4444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:10:32.856  INFO 4444 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.907 seconds (JVM running for 2.524)
+2023-04-19 12:10:42.600  INFO 4444 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:10:42.600  INFO 4444 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:10:42.600  INFO 4444 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:11:54.959  INFO 9316 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 9316 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:11:54.959  INFO 9316 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:11:55.511  INFO 9316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:11:55.526  INFO 9316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:11:55.684  INFO 9316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:11:55.684  INFO 9316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:11:55.715  INFO 9316 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:11:55.872  INFO 9316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:11:55.888  INFO 9316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:11:55.888  INFO 9316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:11:55.951  INFO 9316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:11:55.951  INFO 9316 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+2023-04-19 12:11:56.328  INFO 9316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:11:56.328  WARN 9316 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:11:56.453  INFO 9316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:11:56.547  INFO 9316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:11:56.547  INFO 9316 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.895 seconds (JVM running for 2.467)
+2023-04-19 12:12:07.874  INFO 9316 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:12:07.874  INFO 9316 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:12:07.875  INFO 9316 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-19 12:13:01.775  INFO 17832 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 17832 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:13:01.775  INFO 17832 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:13:02.268  INFO 17832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:13:02.278  INFO 17832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:13:02.404  INFO 17832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$bac86b57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:13:02.404  INFO 17832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3b9533f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:13:02.435  INFO 17832 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:13:02.609  INFO 17832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:13:02.609  INFO 17832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:13:02.609  INFO 17832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:13:02.671  INFO 17832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:13:02.671  INFO 17832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 842 ms
+2023-04-19 12:13:03.048  INFO 17832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:13:03.048  WARN 17832 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:13:03.174  INFO 17832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:13:03.267  INFO 17832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:13:03.270  INFO 17832 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.815 seconds (JVM running for 2.501)
+2023-04-19 12:13:09.808  INFO 17832 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:13:09.808  INFO 17832 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:13:09.808  INFO 17832 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:13:46.864  INFO 13148 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 13148 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:13:46.864  INFO 13148 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:13:47.384  INFO 13148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:13:47.384  INFO 13148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:13:47.540  INFO 13148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:13:47.540  INFO 13148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:13:47.575  INFO 13148 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:13:47.759  INFO 13148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:13:47.759  INFO 13148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:13:47.759  INFO 13148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:13:47.822  INFO 13148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:13:47.822  INFO 13148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 925 ms
+2023-04-19 12:13:48.231  INFO 13148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:13:48.231  WARN 13148 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:13:48.377  INFO 13148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:13:48.484  INFO 13148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:13:48.489  INFO 13148 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.97 seconds (JVM running for 2.611)
+2023-04-19 12:13:54.475  INFO 13148 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:13:54.475  INFO 13148 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:13:54.475  INFO 13148 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:15:23.255  INFO 10440 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 10440 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:15:23.255  INFO 10440 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:15:23.775  INFO 10440 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:15:23.775  INFO 10440 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:15:23.932  INFO 10440 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:15:23.932  INFO 10440 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:15:23.964  INFO 10440 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:15:24.122  INFO 10440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:15:24.122  INFO 10440 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:15:24.122  INFO 10440 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:15:24.185  INFO 10440 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:15:24.185  INFO 10440 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 899 ms
+2023-04-19 12:15:24.617  INFO 10440 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:15:24.617  WARN 10440 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:15:24.752  INFO 10440 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:15:24.846  INFO 10440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:15:24.846  INFO 10440 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.946 seconds (JVM running for 2.546)
+2023-04-19 12:15:47.178  INFO 10440 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:15:47.179  INFO 10440 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:15:47.181  INFO 10440 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-19 12:19:27.648  INFO 24384 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 24384 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:19:27.648  INFO 24384 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:19:28.127  INFO 24384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:19:28.143  INFO 24384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:19:28.285  INFO 24384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:19:28.285  INFO 24384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:19:28.300  INFO 24384 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:19:28.489  INFO 24384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:19:28.489  INFO 24384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:19:28.489  INFO 24384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:19:28.552  INFO 24384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:19:28.552  INFO 24384 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 866 ms
+2023-04-19 12:19:28.993  INFO 24384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:19:28.993  WARN 24384 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:19:29.142  INFO 24384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:19:29.228  INFO 24384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:19:29.228  INFO 24384 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.9 seconds (JVM running for 2.588)
+2023-04-19 12:19:32.382  INFO 24384 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:19:32.382  INFO 24384 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:19:32.385  INFO 24384 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-19 12:21:00.783  INFO 12348 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 12348 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:21:00.783  INFO 12348 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:21:01.317  INFO 12348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:21:01.317  INFO 12348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:21:01.484  INFO 12348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$bac86b57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:21:01.484  INFO 12348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3b9533f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:21:01.505  INFO 12348 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:21:01.694  INFO 12348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:21:01.709  INFO 12348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:21:01.709  INFO 12348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:21:01.772  INFO 12348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:21:01.772  INFO 12348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 959 ms
+2023-04-19 12:21:02.165  INFO 12348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:21:02.165  WARN 12348 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:21:02.306  INFO 12348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:21:02.385  INFO 12348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:21:02.385  INFO 12348 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.938 seconds (JVM running for 2.598)
+2023-04-19 12:21:19.534  INFO 12348 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:21:19.534  INFO 12348 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:21:19.534  INFO 12348 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:21:46.304  INFO 7040 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 7040 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:21:46.320  INFO 7040 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:21:46.841  INFO 7040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:21:46.856  INFO 7040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:21:46.997  INFO 7040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:21:46.997  INFO 7040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:21:47.029  INFO 7040 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:21:47.205  INFO 7040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:21:47.205  INFO 7040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:21:47.205  INFO 7040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:21:47.265  INFO 7040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:21:47.265  INFO 7040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
+2023-04-19 12:21:47.672  INFO 7040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:21:47.672  WARN 7040 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:21:47.807  INFO 7040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:21:47.876  INFO 7040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:21:47.893  INFO 7040 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.905 seconds (JVM running for 2.518)
+2023-04-19 12:21:53.287  INFO 7040 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:21:53.287  INFO 7040 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:21:53.287  INFO 7040 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:22:33.013  INFO 12268 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 12268 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:22:33.013  INFO 12268 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:22:33.535  INFO 12268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:22:33.548  INFO 12268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:22:33.706  INFO 12268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$a24f38dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:22:33.706  INFO 12268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$231c017d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:22:33.737  INFO 12268 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:22:33.936  INFO 12268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:22:33.943  INFO 12268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:22:33.943  INFO 12268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:22:34.006  INFO 12268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:22:34.006  INFO 12268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 961 ms
+2023-04-19 12:22:34.446  INFO 12268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:22:34.446  WARN 12268 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:22:34.587  INFO 12268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:22:34.682  INFO 12268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:22:34.682  INFO 12268 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.987 seconds (JVM running for 2.631)
+2023-04-19 12:22:57.738  INFO 12268 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:22:57.738  INFO 12268 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:22:57.739  INFO 12268 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:23:01.924  INFO 12268 --- [http-nio-8086-exec-10] bank.project.app.RoleController          : [ProfileUpdate(customerid=102, customername=manvith, customerstatus=Active, customercontact=2345125678, username=manvith, password=manvith, failedattempts=0, customeraadhaar=9998776543246, customerpan=we34567, updatestatus=pending, customeraddress=udupi), ProfileUpdate(customerid=120, customername=amrutha, customerstatus=Active, customercontact=7896543, username=pooja, password=pooja, failedattempts=0, customeraadhaar=98765432, customerpan=2345678dfghj, updatestatus=pending, customeraddress=udupi banglore)]
+2023-04-19 12:24:55.479  INFO 6476 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 6476 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:24:55.495  INFO 6476 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:24:55.966  INFO 6476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:24:55.981  INFO 6476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:24:56.123  INFO 6476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:24:56.123  INFO 6476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:24:56.139  INFO 6476 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:24:56.312  INFO 6476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:24:56.327  INFO 6476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:24:56.327  INFO 6476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:24:56.411  INFO 6476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:24:56.411  INFO 6476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 884 ms
+2023-04-19 12:24:56.831  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:24:56.831  WARN 6476 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:24:56.956  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:24:57.051  INFO 6476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:24:57.051  INFO 6476 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.87 seconds (JVM running for 2.528)
+2023-04-19 12:25:10.839  INFO 6476 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:25:10.840  INFO 6476 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:25:10.843  INFO 6476 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-19 12:25:36.457  INFO 20044 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 20044 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:25:36.457  INFO 20044 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:25:37.009  INFO 20044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:25:37.009  INFO 20044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:25:37.150  INFO 20044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:25:37.150  INFO 20044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:25:37.197  INFO 20044 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:25:37.354  INFO 20044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:25:37.370  INFO 20044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:25:37.370  INFO 20044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:25:37.417  INFO 20044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:25:37.417  INFO 20044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 929 ms
+2023-04-19 12:25:37.827  INFO 20044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:25:37.827  WARN 20044 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:25:37.953  INFO 20044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:25:38.031  INFO 20044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:25:38.047  INFO 20044 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.907 seconds (JVM running for 2.591)
+2023-04-19 12:25:45.576  INFO 20044 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:25:45.576  INFO 20044 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:25:45.576  INFO 20044 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:28:34.283  INFO 23796 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 23796 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:28:34.289  INFO 23796 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:28:34.738  INFO 23796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:28:34.754  INFO 23796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:28:34.880  INFO 23796 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:28:34.880  INFO 23796 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:28:34.912  INFO 23796 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:28:35.069  INFO 23796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:28:35.069  INFO 23796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:28:35.069  INFO 23796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:28:35.132  INFO 23796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:28:35.132  INFO 23796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 808 ms
+2023-04-19 12:28:35.527  INFO 23796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:28:35.527  WARN 23796 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:28:35.669  INFO 23796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:28:35.748  INFO 23796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:28:35.763  INFO 23796 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.782 seconds (JVM running for 2.376)
+2023-04-19 12:28:43.545  INFO 23796 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:28:43.545  INFO 23796 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:28:43.545  INFO 23796 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:28:46.739  INFO 23796 --- [http-nio-8086-exec-4] bank.project.app.RoleController          : [ProfileUpdate(customerid=102, customername=manvith, customerstatus=Active, customercontact=2345125678, username=manvith, password=manvith, failedattempts=0, customeraadhaar=9998776543246, customerpan=we34567, updatestatus=pending, customeraddress=udupi), ProfileUpdate(customerid=120, customername=amrutha, customerstatus=Active, customercontact=7896543, username=pooja, password=pooja, failedattempts=0, customeraadhaar=98765432, customerpan=2345678dfghj, updatestatus=pending, customeraddress=udupi banglore)]
+2023-04-19 12:29:39.780  INFO 6812 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 6812 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:29:39.780  INFO 6812 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:29:40.268  INFO 6812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:29:40.268  INFO 6812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:29:40.409  INFO 6812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:29:40.409  INFO 6812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:29:40.456  INFO 6812 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:29:40.613  INFO 6812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:29:40.613  INFO 6812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:29:40.613  INFO 6812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:29:40.676  INFO 6812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:29:40.676  INFO 6812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 865 ms
+2023-04-19 12:29:41.053  INFO 6812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:29:41.053  WARN 6812 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:29:41.179  INFO 6812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:29:41.258  INFO 6812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:29:41.274  INFO 6812 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.799 seconds (JVM running for 2.419)
+2023-04-19 12:29:50.205  INFO 6812 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:29:50.205  INFO 6812 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:29:50.205  INFO 6812 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:39:54.351  INFO 15564 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 15564 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:39:54.354  INFO 15564 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:39:54.849  INFO 15564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:39:54.865  INFO 15564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:39:55.019  INFO 15564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:39:55.022  INFO 15564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:39:55.055  INFO 15564 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:39:55.235  INFO 15564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:39:55.243  INFO 15564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:39:55.243  INFO 15564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:39:55.305  INFO 15564 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:39:55.305  INFO 15564 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 906 ms
+2023-04-19 12:39:55.698  INFO 15564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:39:55.698  WARN 15564 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:39:55.840  INFO 15564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:39:55.918  INFO 15564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:39:55.918  INFO 15564 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.903 seconds (JVM running for 2.533)
+2023-04-19 12:40:19.898  INFO 15564 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:40:19.899  INFO 15564 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:40:19.899  INFO 15564 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:40:28.465  WARN 15564 --- [http-nio-8086-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:41:31.070  INFO 11276 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 11276 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:41:31.081  INFO 11276 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:41:31.585  INFO 11276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:41:31.585  INFO 11276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:41:31.726  INFO 11276 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:41:31.726  INFO 11276 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:41:31.757  INFO 11276 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:41:31.930  INFO 11276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:41:31.946  INFO 11276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:41:31.946  INFO 11276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:41:32.009  INFO 11276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:41:32.009  INFO 11276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 897 ms
+2023-04-19 12:41:32.387  INFO 11276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:41:32.387  WARN 11276 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:41:32.528  INFO 11276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:41:32.607  INFO 11276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:41:32.623  INFO 11276 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.884 seconds (JVM running for 2.474)
+2023-04-19 12:41:39.228  INFO 11276 --- [http-nio-8086-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:41:39.243  INFO 11276 --- [http-nio-8086-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:41:39.243  INFO 11276 --- [http-nio-8086-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:41:39.259  WARN 11276 --- [http-nio-8086-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:43:55.305  INFO 13584 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 13584 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:43:55.305  INFO 13584 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:43:55.778  INFO 13584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:43:55.794  INFO 13584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:43:55.920  INFO 13584 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:43:55.920  INFO 13584 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:43:55.952  INFO 13584 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:43:56.108  INFO 13584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:43:56.108  INFO 13584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:43:56.108  INFO 13584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:43:56.171  INFO 13584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:43:56.171  INFO 13584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 818 ms
+2023-04-19 12:43:56.549  INFO 13584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:43:56.549  WARN 13584 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:43:56.674  INFO 13584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:43:56.769  INFO 13584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:43:56.769  INFO 13584 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.796 seconds (JVM running for 2.415)
+2023-04-19 12:44:04.496  INFO 13584 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:44:04.496  INFO 13584 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:44:04.496  INFO 13584 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:44:13.242  WARN 13584 --- [http-nio-8086-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:14.181  WARN 13584 --- [http-nio-8086-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:16.231  WARN 13584 --- [http-nio-8086-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:16.637  WARN 13584 --- [http-nio-8086-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:17.030  WARN 13584 --- [http-nio-8086-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:17.374  WARN 13584 --- [http-nio-8086-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:17.610  WARN 13584 --- [http-nio-8086-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:18.313  WARN 13584 --- [http-nio-8086-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:18.519  WARN 13584 --- [http-nio-8086-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:18.705  WARN 13584 --- [http-nio-8086-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:18.915  WARN 13584 --- [http-nio-8086-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:44:50.575  INFO 21196 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 21196 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:44:50.575  INFO 21196 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:44:51.079  INFO 21196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:44:51.079  INFO 21196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:44:51.220  INFO 21196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:44:51.220  INFO 21196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:44:51.251  INFO 21196 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:44:51.424  INFO 21196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:44:51.424  INFO 21196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:44:51.424  INFO 21196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:44:51.487  INFO 21196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:44:51.487  INFO 21196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 865 ms
+2023-04-19 12:44:51.896  INFO 21196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:44:51.896  WARN 21196 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:44:52.021  INFO 21196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:44:52.100  INFO 21196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:44:52.116  INFO 21196 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.873 seconds (JVM running for 2.508)
+2023-04-19 12:44:58.091  INFO 21196 --- [http-nio-8086-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:44:58.091  INFO 21196 --- [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:44:58.091  INFO 21196 --- [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:45:12.126  WARN 21196 --- [http-nio-8086-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:47:04.397  INFO 14076 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 14076 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:47:04.413  INFO 14076 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:47:05.018  INFO 14076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:47:05.032  INFO 14076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:47:05.174  INFO 14076 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:47:05.174  INFO 14076 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:47:05.205  INFO 14076 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:47:05.402  INFO 14076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:47:05.402  INFO 14076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:47:05.402  INFO 14076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:47:05.480  INFO 14076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:47:05.480  INFO 14076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1024 ms
+2023-04-19 12:47:05.889  INFO 14076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:47:05.891  WARN 14076 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:47:06.020  INFO 14076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:47:06.112  INFO 14076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:47:06.122  INFO 14076 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.012 seconds (JVM running for 2.642)
+2023-04-19 12:47:24.048  INFO 14076 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:47:24.048  INFO 14076 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:47:24.048  INFO 14076 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:47:33.484  WARN 14076 --- [http-nio-8086-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:47:34.597  WARN 14076 --- [http-nio-8086-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:47:35.048  WARN 14076 --- [http-nio-8086-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:49:33.418  INFO 4340 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 4340 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:49:33.418  INFO 4340 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:49:34.016  INFO 4340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:49:34.016  INFO 4340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:49:34.173  INFO 4340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:49:34.173  INFO 4340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:49:34.205  INFO 4340 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:49:34.377  INFO 4340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:49:34.377  INFO 4340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:49:34.377  INFO 4340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:49:34.457  INFO 4340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:49:34.457  INFO 4340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 992 ms
+2023-04-19 12:49:34.913  INFO 4340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:49:34.913  WARN 4340 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:49:35.054  INFO 4340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:49:35.164  INFO 4340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:49:35.164  INFO 4340 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.076 seconds (JVM running for 2.688)
+2023-04-19 12:49:45.469  INFO 22084 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 22084 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:49:45.471  INFO 22084 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:49:45.926  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:49:45.926  INFO 22084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:49:46.067  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$f5aed51e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:49:46.067  INFO 22084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$767b9dbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:49:46.098  INFO 22084 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:49:46.256  INFO 22084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:49:46.256  INFO 22084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:49:46.256  INFO 22084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:49:46.319  INFO 22084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:49:46.319  INFO 22084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 818 ms
+2023-04-19 12:49:46.697  INFO 22084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:49:46.697  WARN 22084 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:49:46.828  INFO 22084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:49:46.901  INFO 22084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:49:46.916  INFO 22084 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.794 seconds (JVM running for 2.577)
+2023-04-19 12:49:58.063  INFO 22084 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:49:58.063  INFO 22084 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:49:58.063  INFO 22084 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:50:11.055  WARN 22084 --- [http-nio-8086-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:50:12.061  WARN 22084 --- [http-nio-8086-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:50:13.577  WARN 22084 --- [http-nio-8086-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:50:14.628  WARN 22084 --- [http-nio-8086-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:50:16.228  WARN 22084 --- [http-nio-8086-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:50:19.078  WARN 22084 --- [http-nio-8086-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:50:20.195  WARN 22084 --- [http-nio-8086-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:51:56.425  INFO 16376 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 16376 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:51:56.425  INFO 16376 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:51:56.882  INFO 16376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:51:56.897  INFO 16376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:51:57.056  INFO 16376 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:51:57.056  INFO 16376 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:51:57.087  INFO 16376 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:51:57.276  INFO 16376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:51:57.276  INFO 16376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:51:57.276  INFO 16376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:51:58.143  INFO 16376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:51:58.143  INFO 16376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1687 ms
+2023-04-19 12:51:58.615  INFO 16376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:51:58.615  WARN 16376 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:51:58.788  INFO 16376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:51:58.883  INFO 16376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:51:58.898  INFO 16376 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.775 seconds (JVM running for 3.503)
+2023-04-19 12:52:09.725  INFO 16376 --- [http-nio-8086-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:52:09.725  INFO 16376 --- [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:52:09.725  INFO 16376 --- [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:52:18.387  WARN 16376 --- [http-nio-8086-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:52:19.067  WARN 16376 --- [http-nio-8086-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:53:31.470  WARN 16376 --- [http-nio-8086-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:53:33.049  WARN 16376 --- [http-nio-8086-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:55:47.396  INFO 10132 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 10132 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:55:47.396  INFO 10132 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:55:47.893  INFO 10132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:55:47.900  INFO 10132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:55:48.042  INFO 10132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:55:48.042  INFO 10132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:55:48.058  INFO 10132 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:55:48.231  INFO 10132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:55:48.231  INFO 10132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:55:48.231  INFO 10132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:55:48.293  INFO 10132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:55:48.293  INFO 10132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 866 ms
+2023-04-19 12:55:48.687  INFO 10132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:55:48.687  WARN 10132 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:55:48.828  INFO 10132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:55:48.923  INFO 10132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:55:48.923  INFO 10132 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.841 seconds (JVM running for 2.449)
+2023-04-19 12:55:53.356  INFO 10132 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:55:53.356  INFO 10132 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:55:53.356  INFO 10132 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:56:04.870  WARN 10132 --- [http-nio-8086-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:56:07.245  WARN 10132 --- [http-nio-8086-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:56:09.225  WARN 10132 --- [http-nio-8086-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:56:11.527  WARN 10132 --- [http-nio-8086-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:56:14.144  WARN 10132 --- [http-nio-8086-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:56:19.961  WARN 10132 --- [http-nio-8086-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:57:43.307  INFO 19936 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 19936 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:57:43.319  INFO 19936 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:57:43.795  INFO 19936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:57:43.812  INFO 19936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:57:43.951  INFO 19936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:57:43.951  INFO 19936 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:57:43.983  INFO 19936 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:57:44.140  INFO 19936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:57:44.140  INFO 19936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:57:44.140  INFO 19936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:57:44.203  INFO 19936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:57:44.203  INFO 19936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2023-04-19 12:57:44.580  INFO 19936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:57:44.580  WARN 19936 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:57:44.706  INFO 19936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:57:44.785  INFO 19936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:57:44.801  INFO 19936 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.789 seconds (JVM running for 2.457)
+2023-04-19 12:57:55.833  INFO 19936 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:57:55.834  INFO 19936 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:57:55.835  INFO 19936 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-19 12:58:28.325  INFO 19496 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 19496 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:58:28.325  INFO 19496 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:58:28.811  INFO 19496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:58:28.828  INFO 19496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:58:28.968  INFO 19496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$80e977ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:58:28.968  INFO 19496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1b6408b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:58:28.999  INFO 19496 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:58:29.157  INFO 19496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:58:29.173  INFO 19496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:58:29.173  INFO 19496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:58:29.235  INFO 19496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:58:29.235  INFO 19496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 879 ms
+2023-04-19 12:58:29.628  INFO 19496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:58:29.628  WARN 19496 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:58:29.770  INFO 19496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:58:29.864  INFO 19496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:58:29.864  INFO 19496 --- [main] bank.project.app.AppApplication          : Started AppApplication in 1.866 seconds (JVM running for 2.465)
+2023-04-19 12:58:33.187  INFO 19496 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:58:33.187  INFO 19496 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:58:33.187  INFO 19496 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 12:58:46.772  WARN 19496 --- [http-nio-8086-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2023-04-19 12:59:46.838  INFO 19984 --- [main] bank.project.app.AppApplication          : Starting AppApplication using Java 1.8.0_292 on WPG02V1LW with PID 19984 (C:\DLTE-FINAL-PROJECT\BANK-APP\target\classes started by xxnlnnoa in C:\DLTE-FINAL-PROJECT\BANK-APP)
+2023-04-19 12:59:46.845  INFO 19984 --- [main] bank.project.app.AppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19 12:59:47.368  INFO 19984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-19 12:59:47.368  INFO 19984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-04-19 12:59:47.540  INFO 19984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'approvalConfig' of type [bank.project.app.ApprovalConfig$$EnhancerBySpringCGLIB$$6fae12a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:59:47.540  INFO 19984 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f07adb49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-19 12:59:47.587  INFO 19984 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-04-19 12:59:47.816  INFO 19984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2023-04-19 12:59:47.822  INFO 19984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19 12:59:47.822  INFO 19984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-19 12:59:47.901  INFO 19984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19 12:59:47.901  INFO 19984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 990 ms
+2023-04-19 12:59:48.373  INFO 19984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19 12:59:48.373  WARN 19984 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-04-19 12:59:48.530  INFO 19984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19 12:59:48.641  INFO 19984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2023-04-19 12:59:48.656  INFO 19984 --- [main] bank.project.app.AppApplication          : Started AppApplication in 2.235 seconds (JVM running for 2.844)
+2023-04-19 12:59:51.626  INFO 19984 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19 12:59:51.626  INFO 19984 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19 12:59:51.626  INFO 19984 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-19 13:00:00.485  INFO 19984 --- [http-nio-8086-exec-6] bank.project.app.RoleController          : Entered sample function
+2023-04-19 13:00:00.668  INFO 19984 --- [http-nio-8086-exec-6] bank.project.app.RoleController          : active
+2023-04-19 13:00:00.684  INFO 19984 --- [http-nio-8086-exec-6] bank.project.app.RoleController          : Success
+2023-04-19 13:59:34.619  WARN 19984 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m45s327ms634µs).
