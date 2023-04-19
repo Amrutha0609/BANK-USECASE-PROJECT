@@ -37,6 +37,7 @@ import java.util.ResourceBundle;
         jdbcTemplate.update("update customer set update_status='approved' where username=?", username);
         return "Approved";
     }
+    //load
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
