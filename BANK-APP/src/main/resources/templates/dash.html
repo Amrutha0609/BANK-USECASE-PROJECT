@@ -185,6 +185,9 @@
         </div>
     </div>
 </nav>
-<iframe th:src="@{/web/home}" style="width:100%;height:80vh;"></iframe>
+<div th:replace="home :: navbar">
+
+</div>
+<!--<iframe th:src="@{/web/home}" style="width:100%;height:80vh;"></iframe>-->
 </body>
 </html>
