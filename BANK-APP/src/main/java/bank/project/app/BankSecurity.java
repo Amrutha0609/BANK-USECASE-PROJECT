@@ -34,7 +34,7 @@ public class BankSecurity {
         httpSecurity.authorizeRequests((requests)->{
             requests.anyRequest().permitAll();
         });
-        httpSecurity.formLogin().loginPage("/web/login").usernameParameter("username").failureHandler(failureHandler).successHandler(successHandler).permitAll();
+        httpSecurity.formLogin().loginPage("/web/log").usernameParameter("username").failureHandler(failureHandler).successHandler(successHandler).permitAll();
         httpSecurity.logout().permitAll();
         httpSecurity.csrf().disable();
 
@@ -47,4 +47,4 @@ public class BankSecurity {
         return httpSecurity.build();
     }
 }
-//
+

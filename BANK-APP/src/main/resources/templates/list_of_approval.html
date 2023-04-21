@@ -54,18 +54,18 @@
                 alert("error")
             }
         });
-     }
+    }
     function fetchDetails(){
         $.get("http://localhost:8086/rest/gets",function(data) {
             console.log(data.length)
             $("tbody").html("");
             $.each(data,function (profileindex,item) {
                 console.log(item)
-                alert("lists of the customer");
-               // String info="the customers_profile is updates";
+               // alert("lists of the customer");
+                // String info="the customers_profile is updates";
                 $("#approvaltable").append("<tr class='rows'><td>"+item.customername+"</td><td>"+item.customercontact+"</td><td>"+item.customeraadhaar+"</td><td>"+item.customerpan+"</td><td>"+item.updatestatus +"</td><td><button type='button' class='btn btn-success' onclick=\"approve('"+item.username+"')\">Approve</button> </td></tr>");
                 //alert("lists of the customer");
-             //   return info;
+                //   return info;
             })
         });
     }
@@ -94,8 +94,8 @@
             </tbody>
         </table>
     </div>
-    <br>
-    <button type="Exit" name="exit">exit</button>
+
+<!--   <button type="Exit" name="exit" id="logout" href="/web/log/">exit</button>-->
 </div>
 </body>
 </html>

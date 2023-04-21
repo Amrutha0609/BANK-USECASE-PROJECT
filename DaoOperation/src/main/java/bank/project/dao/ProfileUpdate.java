@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+//pojo class which is required to update the customer profile
 public class ProfileUpdate {
     private Integer customerid;
     private String customername;

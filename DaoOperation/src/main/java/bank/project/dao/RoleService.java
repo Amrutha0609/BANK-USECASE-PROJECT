@@ -26,19 +26,27 @@ import java.util.ResourceBundle;
     Logger logger = LoggerFactory.getLogger(RoleService.class);
     ResourceBundle resourceBundle = ResourceBundle.getBundle("role");
 
+//listing the profile of the customer where profile status of the customer's are active
     @Override
     public List<ProfileUpdate> listProfileAll() {
         logger.info(jdbcTemplate.query("select * from profile,customer where customer.customer_id=profile.customer_id and profile_status='active'", new ProfileUpdateMapper()).toString());
         return jdbcTemplate.query("select * from customer where update_status='pending'", new ProfileUpdateMapper());
     }
+
+    public void resetAttempts(int id){
+        jdbcTemplate.update("update Role set failed_attempts=3 where role_id=?",id);
+        logger.info("set attempt to 3");
+    }
+
+ //   updating the status of the customer from pending to approved
     @Override
-    public String listUpdateStatus(String username) {
+    public String UpdateStatus(String username) {
         logger.info("username");
         jdbcTemplate.update("update customer set update_status='approved' where username=?", username);
         return "Approved";
     }
-    //load
 
+// if the username that we specified is not present in the database.
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Role role = getByUsername(username);
@@ -48,32 +56,27 @@ import java.util.ResourceBundle;
         return role;
     }
 
-//    @Override
-////if two times wrong and third time correct
-//    public void decrementAttempts(int id) {
-//        jdbcTemplate.update("update ROLE set Failed_ATTEMPTS = failed_ATTEMPTS - 1 where ROLE_ID=?", id);
-//        logger.info("Decreased the number of attempts");
-//        updateStatus();
-//
-//    }
+    //getting the number of attempts
     @Override
     public int getAttempts(int id) {
         return jdbcTemplate.update("select FAILED_ATTEMPTS from ROLE where ROLE_ID=?", id);
     }
 
-//    @Override
-//    public void setAttempts(int id) {
-//        jdbcTemplate.update("update ROLE set ATTEMPTS=3 where ROLE_ID=?", id);
-//        logger.info("Set attempts to 3");
-//    }
-//
+
+    public void decrementAttempts(int id) {
+        jdbcTemplate.update("update ROLE set FAILED_ATTEMPTS = FAILED_ATTEMPTS - 1 where ROLE_ID_ID=?",id);
+        logger.info("Decreased the number of attempts");
+        updateStatus();
+
+    }
+
     @Override
     public void updateStatus() {
-        jdbcTemplate.update("update ROLE set ROLE_STATUS='Inactive' where ATTEMPTS=0");
+        jdbcTemplate.update("update ROLE set ROLE_STATUS='Inactive' where Failed_ATTEMPTS=0");
         logger.info("Status set to inactive");
     }
 
-
+//listing all the roles.
     @Override
     public List<Role> listAllRole() {
         logger.info("listing all roles of the bank");
@@ -91,6 +94,7 @@ import java.util.ResourceBundle;
         return Optional.empty();
     }
 
+
     @Override
     public Role getByUsername(String username) {
         try {
@@ -100,13 +104,14 @@ import java.util.ResourceBundle;
             return null;
         }
     }
-
+//incrementing the failed attempts
     @Override
     public void incrementFailedAttempts(int id) {
         jdbcTemplate.update("update ROLE set FAILED_ATTEMPTS = FAILED_ATTEMPTS + 1 where ROLE_ID=?", id);
         jdbcTemplate.update("update ROLE set ROLE_STATUS='Inactive' where FAILED_ATTEMPTS=3");
     }
 
+//Rowmapper for roles
     class RoleMapper implements RowMapper<Role> {
         @Override
         public Role mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -124,6 +129,7 @@ import java.util.ResourceBundle;
 
         }
     }
+//    row mapper for profileupdate
     class ProfileUpdateMapper implements RowMapper<ProfileUpdate> {
         @Override
         public ProfileUpdate mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -139,7 +145,7 @@ import java.util.ResourceBundle;
             profileUpdate.setCustomeraadhaar(rs.getLong("customer_aadhaar"));
             profileUpdate.setCustomerpan(rs.getString("customer_pan"));
             profileUpdate.setUpdatestatus(rs.getString("update_status"));
-            //logger.info("Ready to be viewed");
+            logger.info("Ready to be viewed");
             return profileUpdate;
         }
     }

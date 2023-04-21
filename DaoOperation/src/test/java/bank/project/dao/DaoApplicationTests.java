@@ -41,10 +41,11 @@ class DaoApplicationTests {
    @Test
    public void testupdateLoan() {
        ProfileUpdate profile1 = new ProfileUpdate(120, "amrutha", "active", 12345678, "nidhi", "nidhi", 3, 2345678L, "87yut54", "active", "manipal");
-       ProfileUpdate profile2 = new ProfileUpdate(121, "adithya", "deactive", 234579, "veena", "veena", 3, 10986432L, "345sdfghj", "pending", "manipal");
+       ProfileUpdate profile2 = new ProfileUpdate(121, "abhishik", "pending", 234579, "veena", "veena", 3, 10986432L, "345sdfghj", "pending", "manipal");
        String username = "amrutha";
        when(jdbcTemplate.update(eq("update customer set update_status='approved' where username=?"), eq(username))).thenReturn(1);
-       assertEquals("Approved", service.listUpdateStatus(username));
+       assertEquals("Approved", service.UpdateStatus(username));
+       assertNotEquals("pending",service.UpdateStatus(username));
    }
     @Test
     public void testLoan(){
@@ -53,7 +54,10 @@ class DaoApplicationTests {
         List<ProfileUpdate> updatelist = Stream.of(profile1,profile2).collect(Collectors.toList());
         when(jdbcTemplate.query(eq("select * from customer where update_status='pending'"), any(RowMapper.class))).thenReturn(updatelist);
         assertEquals(updatelist,service.listProfileAll());
+        assertNotEquals(profile1,service.listProfileAll().get(1));
     }
+
+
 
 
 

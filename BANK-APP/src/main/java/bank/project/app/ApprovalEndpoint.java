@@ -1,6 +1,4 @@
 package bank.project.app;
-
-
 import approval.project.soap.ApproveRequest;
 import approval.project.soap.ApproveResponse;
 import approval.project.soap.ServiceStatus;
@@ -24,7 +22,7 @@ public class ApprovalEndpoint {
     public ApproveResponse approveResponse(@RequestPayload ApproveRequest approveRequest) {
         ApproveResponse response = new ApproveResponse();
         ServiceStatus serviceStatus = new ServiceStatus();
-        String str = service.listUpdateStatus(approveRequest.getUsername());
+        String str = service.UpdateStatus(approveRequest.getUsername());
         System.out.println("Message "+str);
         serviceStatus.setMessage(str);
         serviceStatus.setStatus("Success");
@@ -32,4 +30,3 @@ public class ApprovalEndpoint {
         return response;
     }
 }
-//}

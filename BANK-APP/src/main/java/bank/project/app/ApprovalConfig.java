@@ -12,6 +12,8 @@ import org.springframework.xml.xsd.SimpleXsdSchema;
 import org.springframework.xml.xsd.XsdSchema;
 @EnableWs
     @Configuration
+
+//class approvalconfiguration with the bean class as approval.
     public class ApprovalConfig extends WsConfigurerAdapter {
         @Bean(name = "approval")
         public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema approvalSchema){
