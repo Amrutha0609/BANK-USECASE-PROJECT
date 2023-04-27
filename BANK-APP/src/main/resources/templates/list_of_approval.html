@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,9 +29,6 @@
     $(document).ready(function () {
         fetchDetails();
     })
-
-
-
     function approve(user) {
         var soapRequest = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soap.project.approval\">\n" +
             "   <soapenv:Header/>\n" +
@@ -42,12 +39,14 @@
             "   </soapenv:Body>\n" +
             "</soapenv:Envelope>";
         $.ajax({
+
             url: "http://localhost:8086/approvalPoint",
             type: "POST",
             dataType: "xml",
             contentType: "text/xml;charset=\"UTF-8\"",
             data: soapRequest,
             success: (data) => {
+                alert("The Customer profile is updated");
                 fetchDetails();
             },
             error:()=>{
@@ -61,11 +60,7 @@
             $("tbody").html("");
             $.each(data,function (profileindex,item) {
                 console.log(item)
-               // alert("lists of the customer");
-                // String info="the customers_profile is updates";
                 $("#approvaltable").append("<tr class='rows'><td>"+item.customername+"</td><td>"+item.customercontact+"</td><td>"+item.customeraadhaar+"</td><td>"+item.customerpan+"</td><td>"+item.updatestatus +"</td><td><button type='button' class='btn btn-success' onclick=\"approve('"+item.username+"')\">Approve</button> </td></tr>");
-                //alert("lists of the customer");
-                //   return info;
             })
         });
     }
@@ -90,12 +85,12 @@
                 <th>update_status</th>
             </tr>
             <tbody id="approvaltable">
-
             </tbody>
         </table>
     </div>
-
-<!--   <button type="Exit" name="exit" id="logout" href="/web/log/">exit</button>-->
+    <li class="nav-item text-left mt-2">
+        <a th:href="@{/logout}"><button class="btn btn-danger rounded-4 me-2"><i class="bi bi-box-arrow-left"></i>Exit</button></a>
+    </li>
 </div>
 </body>
 </html>

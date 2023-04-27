@@ -9,14 +9,11 @@ import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
-
 @Endpoint
 public class ApprovalEndpoint {
     private static final String url = "http://soap.project.approval";
-
     @Autowired
     RoleService service;
-
     @PayloadRoot(namespace = url, localPart = "approveRequest")
     @ResponsePayload
     public ApproveResponse approveResponse(@RequestPayload ApproveRequest approveRequest) {

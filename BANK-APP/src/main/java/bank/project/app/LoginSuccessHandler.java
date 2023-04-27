@@ -2,6 +2,7 @@ package bank.project.app;
 
 import bank.project.dao.Role;
 import bank.project.dao.RoleService;
+import com.sun.org.apache.xml.internal.utils.res.XResourceBundle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
@@ -23,15 +24,12 @@ public class LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
             Role role= (Role) authentication.getPrincipal();
             ResourceBundle bundle=ResourceBundle.getBundle("role");
             if(role.getRolestatus().equalsIgnoreCase("inactive")) {
-                logger.info(role + " in success handler");
+                logger.info(" not successful");
                 super.setDefaultTargetUrl("/logout");
+                super.setTargetUrlParameter("login/logout?error="+bundle.getString("accInactive"));
             }
             else {
                 roleService.resetAttempts(role.getRoleid());
-                // super.setDefaultTargetUrl("/web/log");
-
-// if(customer.getAttempts()==0)
-// logger.info("deactivate");
                 super.setDefaultTargetUrl("/web/dash");
             }
             super.onAuthenticationSuccess(request, response, authentication);

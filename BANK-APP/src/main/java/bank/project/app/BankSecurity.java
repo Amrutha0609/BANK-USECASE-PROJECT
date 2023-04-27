@@ -27,12 +27,15 @@ public class BankSecurity {
     public PasswordEncoder passwordEncoder(){
         return NoOpPasswordEncoder.getInstance();
     }
-
+//permitting to  all pages
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
 
         httpSecurity.authorizeRequests((requests)->{
-            requests.anyRequest().permitAll();
+            requests.antMatchers("/resources/static/images/**").permitAll();
+            requests.antMatchers("/web/log").permitAll();
+            requests.antMatchers("/web/dash").authenticated();
+            requests.antMatchers("/web/profile").authenticated();
         });
         httpSecurity.formLogin().loginPage("/web/log").usernameParameter("username").failureHandler(failureHandler).successHandler(successHandler).permitAll();
         httpSecurity.logout().permitAll();

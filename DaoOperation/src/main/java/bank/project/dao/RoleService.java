@@ -26,32 +26,36 @@ import java.util.ResourceBundle;
     Logger logger = LoggerFactory.getLogger(RoleService.class);
     ResourceBundle resourceBundle = ResourceBundle.getBundle("role");
 
-//listing the profile of the customer where profile status of the customer's are active
+     //listing the profile of the customer where profile status of the customer's are active
     @Override
     public List<ProfileUpdate> listProfileAll() {
-        logger.info(jdbcTemplate.query("select * from profile,customer where customer.customer_id=profile.customer_id and profile_status='active'", new ProfileUpdateMapper()).toString());
+      //  logger.info(jdbcTemplate.query("select * from profile,customer where customer.customer_id=profile.customer_id and profile_status='active'", new ProfileUpdateMapper()).toString());
         return jdbcTemplate.query("select * from customer where update_status='pending'", new ProfileUpdateMapper());
     }
 
-    public void resetAttempts(int id){
-        jdbcTemplate.update("update Role set failed_attempts=3 where role_id=?",id);
-        logger.info("set attempt to 3");
-    }
-
- //   updating the status of the customer from pending to approved
+    // updating the status of the customer from pending to approved
     @Override
     public String UpdateStatus(String username) {
         logger.info("username");
-        jdbcTemplate.update("update customer set update_status='approved' where username=?", username);
+        jdbcTemplate.update("update customer set update_status='approved',timestamp_customer=LOCALTIMESTAMP(2) where username=?", username);
         return "Approved";
     }
 
-// if the username that we specified is not present in the database.
+    //login form where we are resetting attempt
+    public void resetAttempts(int id){
+        jdbcTemplate.update("update Role set failed_attempts=0 where role_id=?",id);
+        logger.info("set attempt to 3");
+    }
+
+    // if the username that we specified is not present in the database.
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Role role = getByUsername(username);
         if (role == null) {
             throw new UsernameNotFoundException(resourceBundle.getString("user not found"));
+        }
+        if (role.getRolestatus().equalsIgnoreCase("inactive")){
+            throw new UsernameNotFoundException(resourceBundle.getString("accInactive"));
         }
         return role;
     }
@@ -59,29 +63,31 @@ import java.util.ResourceBundle;
     //getting the number of attempts
     @Override
     public int getAttempts(int id) {
-        return jdbcTemplate.update("select FAILED_ATTEMPTS from ROLE where ROLE_ID=?", id);
+        return jdbcTemplate.queryForObject("select FAILED_ATTEMPTS from ROLE where ROLE_ID=?",Integer.class, id);
     }
 
 
-    public void decrementAttempts(int id) {
-        jdbcTemplate.update("update ROLE set FAILED_ATTEMPTS = FAILED_ATTEMPTS - 1 where ROLE_ID_ID=?",id);
-        logger.info("Decreased the number of attempts");
-        updateStatus();
+//    public void decrementAttempts(int id) {
+//        jdbcTemplate.update("update ROLE set FAILED_ATTEMPTS = FAILED_ATTEMPTS - 1 where ROLE_ID_ID=?",id);
+//        logger.info("Decreased the number of attempts");
+//        updateStatus();
+//
+//    }
 
-    }
-
+    //updating status
     @Override
     public void updateStatus() {
-        jdbcTemplate.update("update ROLE set ROLE_STATUS='Inactive' where Failed_ATTEMPTS=0");
+        jdbcTemplate.update("update ROLE set ROLE_STATUS='Inactive' where Failed_ATTEMPTS=3");
         logger.info("Status set to inactive");
     }
 
-//listing all the roles.
+    //listing all the roles.
     @Override
     public List<Role> listAllRole() {
         logger.info("listing all roles of the bank");
         return jdbcTemplate.query("select * from role", new RoleMapper());
     }
+
 
     @Override
     public List<Role> readByUserNames(String name) {

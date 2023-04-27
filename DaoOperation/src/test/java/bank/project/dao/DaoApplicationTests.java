@@ -29,6 +29,7 @@ class DaoApplicationTests {
     @InjectMocks
     RoleService service;
 
+//    test cases
     @Test
     public void testListAll() {
         Role R1 = new Role(100, "admin ", "admin is active", "Active", 100, "manvith", "manvith", 3);
@@ -43,12 +44,12 @@ class DaoApplicationTests {
        ProfileUpdate profile1 = new ProfileUpdate(120, "amrutha", "active", 12345678, "nidhi", "nidhi", 3, 2345678L, "87yut54", "active", "manipal");
        ProfileUpdate profile2 = new ProfileUpdate(121, "abhishik", "pending", 234579, "veena", "veena", 3, 10986432L, "345sdfghj", "pending", "manipal");
        String username = "amrutha";
-       when(jdbcTemplate.update(eq("update customer set update_status='approved' where username=?"), eq(username))).thenReturn(1);
+       when(jdbcTemplate.update(eq("update customer set update_status='approved', timestamp_customer=LOCALTIMESTAMP(2) where username=?"), eq(username))).thenReturn(1);
        assertEquals("Approved", service.UpdateStatus(username));
        assertNotEquals("pending",service.UpdateStatus(username));
    }
     @Test
-    public void testLoan(){
+    public void testProfile(){
         ProfileUpdate profile1=new ProfileUpdate(120,"amrutha","active",12345678,"nidhi","nidhi",3,2345678L,"87yut54","active","manipal");
         ProfileUpdate profile2=new ProfileUpdate(121,"adithya","deactive",234579,"veena","veena",3,10986432L,"345sdfghj","pending","manipal");
         List<ProfileUpdate> updatelist = Stream.of(profile1,profile2).collect(Collectors.toList());

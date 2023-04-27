@@ -11,6 +11,7 @@ public class MvnController {
     public String list_of_loan() {
         return "list_of_loan";
     }
+
     @GetMapping("/log")
     public String login() {
         return "login";

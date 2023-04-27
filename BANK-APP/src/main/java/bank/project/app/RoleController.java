@@ -1,5 +1,4 @@
 package bank.project.app;
-
 import approval.project.soap.Customer;
 import bank.project.dao.ProfileUpdate;
 import bank.project.dao.Role;
@@ -33,34 +32,8 @@ public class RoleController {
         logger.info(list_of_profile.toString());
         return list_of_profile;
     }
-//    @PostMapping("/approve")
-//    public String approve(@RequestParam("username")String customername){
-//        logger.info("approved");
-//        return service.listUpdateStatus(customername);
-//    }
-    @PostMapping("/authenticate")
-    public String login(@RequestParam("username") String username, @RequestParam("password") String password) {
-         logger.info("Entered sample function");
-        Role role = service.getByUsername(username);
-        if (role == null){
-            logger.info(resourceBundle.getString("db_user"));
-            return resourceBundle.getString("db_user");
-        }
-        else {
-            logger.info(role.getRolestatus());
-            if (role.getRolestatus().equalsIgnoreCase("Inactive")){
-                logger.info(resourceBundle.getString("db_unsuccessfull"));
-                return resourceBundle.getString("db_unsuccessfull");
-            }
-            if (!password.equals(role.getPassword())) {
-                service.incrementFailedAttempts(role.getRoleid());
-                logger.info(resourceBundle.getString("db_incorrect_pw"));
-                return resourceBundle.getString("db_incorrect_pw");
-            }
-            else {
-                logger.info(resourceBundle.getString("db_success"));
-                return resourceBundle.getString("db_success");
-            }
-        }
-    }
+
+
 }
+
+
